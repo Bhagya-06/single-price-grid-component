@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+html {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+section {
+
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(204, 43%, 93%);
+
+}
+
+#container {
+
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 550px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 1px #00000024;
+    margin: 0 auto;
+
+}
+
+.brightyellow {
+
+    color:hsl(71, 73%, 54%) ;
+
+}
+
+.cyan {
+
+    color: hsl(179, 62%, 43%) ;
+
+}
+
+.item{
+
+    padding: 30px;
+
+}
+
+#white {
+
+    background-color: white;
+    margin: 0 auto;
+}
+
+#white p {
+
+    color: hsl(218, 22%, 67%);
+
+}
+
+#dark {
+    color: whitesmoke;
+    display: inline-block ;
+   background-color:hsl(179, 62%, 43%) ; 
+   
+}
+
+
+#price {
+
+    font-size: 2.5rem;
+
+}
+
+#light {
+
+    display: inline-block;
+    color: whitesmoke;
+    background-color: #4ABEBD;
+    
+    
+}
+
+.button {
+
+    background-color: hsl(71, 73%, 54%); 
+    display: block;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+  }
+
+
+   @media  only  screen  and (min-width: 768px){
+        #container {
+
+            grid-template-columns: 50% 50%;
+
+        }
+        
+        #white {
+
+            grid-area: 1/ 1/ 2/ 3;
+
+        }
+
+        #dark,#light {
+
+            grid-row: 2;
+
+        }
+    }
